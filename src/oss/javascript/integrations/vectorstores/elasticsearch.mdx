@@ -145,25 +145,6 @@ const results = await hybridVectorStore.similaritySearch(
   5
 );
 ```
-
-### Elasticsearch 9.2+ compatibility
-
-Elasticsearch 9.2+ excludes vectors from `_source` by default for performance. If you need vector data in search responses, set `includeSourceVectors`:
-
-```typescript
-const hybridVectorStore = new ElasticVectorSearch(embeddings, {
-  client: new Client(config),
-  indexName: "test_hybrid_search",
-  strategy: new HybridRetrievalStrategy({
-    includeSourceVectors: true,  // Include vectors in responses for ES 9.2+
-  }),
-});
-```
-
-<Note>
-The `includeSourceVectors` parameter is not supported on Elasticsearch versions earlier than 8.19.
-</Note>
-
 ## Manage vector store
 
 ### Add items to vector store
