@@ -50,6 +50,12 @@
       "tagId": "GTM-MBBX68ST"
     }
   },
+  "seo": {
+    "metatags": {
+        "canonical": "https://docs.langchain.com",
+        "google-site-verification": "9_2KHeJwmEdwgncBRk1MsKxriZz7Sc21EJdbfCxkTEo"
+    }
+  },
   "head": [
     "<link rel=\"stylesheet\" href=\"/style.css\">"
   ],
@@ -101,8 +107,16 @@
       "youtube": "https://www.youtube.com/@LangChain"
     }
   },
+  "banner": {
+    "content": "🚀 [Share how you're building agents](https://bit.ly/agent-engineering-survey) for a chance to win LangChain swag!"
+  },
   "navbar": {
     "links": [
+      {
+        "label": "Ask AI",
+        "href": "https://chat.langchain.com/",
+        "icon": "message"
+      },
       {
         "label": "GitHub",
         "href": "https://github.com/langchain-ai",
@@ -137,13 +151,6 @@
                   "tab": "LangChain",
                   "pages": [
                     "oss/python/langchain/overview",
-                    {
-                      "group": "LangChain v1.0",
-                      "pages": [
-                        "oss/python/releases/langchain-v1",
-                        "oss/python/migrate/langchain-v1"
-                      ]
-                    },
                     {
                       "group": "Get started",
                       "pages": [
@@ -186,12 +193,17 @@
                       ]
                     },
                     {
-                      "group": "Use in production",
+                      "group": "Agent development",
                       "pages": [
-                        "oss/python/langchain/studio",
-                        "oss/python/langchain/test",
+                            "oss/python/langchain/studio",
+                            "oss/python/langchain/test",
+                            "oss/python/langchain/ui"
+                      ]
+                    },
+                    {
+                      "group": "Deploy with LangSmith",
+                      "pages": [
                         "oss/python/langchain/deploy",
-                        "oss/python/langchain/ui",
                         "oss/python/langchain/observability"
                       ]
                     }
@@ -201,13 +213,6 @@
                   "tab": "LangGraph",
                   "pages": [
                     "oss/python/langgraph/overview",
-                    {
-                      "group": "LangGraph v1.0",
-                      "pages": [
-                        "oss/python/releases/langgraph-v1",
-                        "oss/python/migrate/langgraph-v1"
-                      ]
-                    },
                     {
                       "group": "Get started",
                       "pages": [
@@ -234,10 +239,10 @@
                       "group": "Production",
                       "pages": [
                         "oss/python/langgraph/application-structure",
-                        "oss/python/langgraph/studio",
                         "oss/python/langgraph/test",
-                        "oss/python/langgraph/deploy",
+                        "oss/python/langgraph/studio",
                         "oss/python/langgraph/ui",
+                        "oss/python/langgraph/deploy",
                         "oss/python/langgraph/observability"
                       ]
                     },
@@ -373,7 +378,8 @@
                       "icon": "list",
                       "pages": [
                         "oss/python/langchain/academy",
-                        "oss/python/langgraph/case-studies"
+                        "oss/python/langgraph/case-studies",
+                        "oss/python/langchain/get-help"
                       ]
                     }
                   ]
@@ -401,16 +407,19 @@
                       "group": "Releases",
                       "pages": [
                         "oss/python/versioning",
+                        "oss/python/releases/changelog",
                         {
                           "group": "Releases",
                           "pages": [
-                            "oss/python/releases/langchain-v1"
+                            "oss/python/releases/langchain-v1",
+                            "oss/python/releases/langgraph-v1"
                           ]
                         },
                         {
                           "group": "Migration guides",
                           "pages": [
-                            "oss/python/migrate/langchain-v1"
+                            "oss/python/migrate/langchain-v1",
+                            "oss/python/migrate/langgraph-v1"
                           ]
                         }
                       ]
@@ -433,32 +442,17 @@
                       "icon": "heart-circle-plus",
                       "pages": [
                         "oss/python/contributing/documentation",
-                        "oss/python/contributing/code"
-                      ]
-                    },
-                    {
-                      "group": "Integrations",
-                      "icon": "plug",
-                      "pages": [
+                        "oss/python/contributing/code",
                         {
-                          "group": "LangChain",
+                          "group": "Integrations",
                           "pages": [
                             "oss/python/contributing/integrations-langchain",
                             "oss/python/contributing/implement-langchain",
                             "oss/python/contributing/standard-tests-langchain",
-                            "oss/python/contributing/publish-langchain"
+                            "oss/python/contributing/publish-langchain",
+                            "oss/python/contributing/comarketing"
                           ]
-                        },
-                        {
-                          "group": "LangGraph",
-                          "pages": [
-                            "oss/python/contributing/integrations-langgraph",
-                            "oss/python/contributing/implement-langgraph",
-                            "oss/python/contributing/standard-tests-langgraph",
-                            "oss/python/contributing/publish-langgraph"
-                          ]
-                        },
-                        "oss/python/contributing/comarketing"
+                        }
                       ]
                     }
                   ]
@@ -473,13 +467,6 @@
                   "tab": "LangChain",
                   "pages": [
                     "oss/javascript/langchain/overview",
-                    {
-                      "group": "LangChain v1.0",
-                      "pages": [
-                        "oss/javascript/releases/langchain-v1",
-                        "oss/javascript/migrate/langchain-v1"
-                      ]
-                    },
                     {
                       "group": "Get started",
                       "pages": [
@@ -522,12 +509,17 @@
                       ]
                     },
                     {
-                      "group": "Use in production",
+                      "group": "Agent development",
                       "pages": [
-                        "oss/javascript/langchain/studio",
-                        "oss/javascript/langchain/test",
+                            "oss/javascript/langchain/studio",
+                            "oss/javascript/langchain/test",
+                            "oss/javascript/langchain/ui"
+                      ]
+                    },
+                    {
+                      "group": "Deploy with LangSmith",
+                      "pages": [
                         "oss/javascript/langchain/deploy",
-                        "oss/javascript/langchain/ui",
                         "oss/javascript/langchain/observability"
                       ]
                     }
@@ -537,13 +529,6 @@
                   "tab": "LangGraph",
                   "pages": [
                     "oss/javascript/langgraph/overview",
-                    {
-                      "group": "LangGraph v1.0",
-                      "pages": [
-                        "oss/javascript/releases/langgraph-v1",
-                        "oss/javascript/migrate/langgraph-v1"
-                      ]
-                    },
                     {
                       "group": "Get started",
                       "pages": [
@@ -570,10 +555,10 @@
                       "group": "Production",
                       "pages": [
                         "oss/javascript/langgraph/application-structure",
-                        "oss/javascript/langgraph/studio",
                         "oss/javascript/langgraph/test",
-                        "oss/javascript/langgraph/deploy",
+                        "oss/javascript/langgraph/studio",
                         "oss/javascript/langgraph/ui",
+                        "oss/javascript/langgraph/deploy",
                         "oss/javascript/langgraph/observability"
                       ]
                     },
@@ -744,7 +729,8 @@
                       "group": "Additional resources",
                       "icon": "list",
                       "pages": [
-                        "oss/javascript/langgraph/case-studies"
+                        "oss/javascript/langgraph/case-studies",
+                        "oss/javascript/langchain/get-help"
                       ]
                     }
                   ]
@@ -771,16 +757,19 @@
                       "group": "Releases",
                       "pages": [
                         "oss/javascript/versioning",
+                        "oss/javascript/releases/changelog",
                         {
                           "group": "Releases",
                           "pages": [
-                            "oss/javascript/releases/langchain-v1"
+                            "oss/javascript/releases/langchain-v1",
+                            "oss/javascript/releases/langgraph-v1"
                           ]
                         },
                         {
                           "group": "Migration guides",
                           "pages": [
-                            "oss/javascript/migrate/langchain-v1"
+                            "oss/javascript/migrate/langchain-v1",
+                            "oss/javascript/migrate/langgraph-v1"
                           ]
                         }
                       ]
@@ -803,32 +792,17 @@
                       "icon": "heart-circle-plus",
                       "pages": [
                         "oss/javascript/contributing/documentation",
-                        "oss/javascript/contributing/code"
-                      ]
-                    },
-                    {
-                      "group": "Integrations",
-                      "icon": "plug",
-                      "pages": [
+                        "oss/javascript/contributing/code",
                         {
-                          "group": "LangChain",
+                          "group": "Integrations",
                           "pages": [
                             "oss/javascript/contributing/integrations-langchain",
                             "oss/javascript/contributing/implement-langchain",
                             "oss/javascript/contributing/standard-tests-langchain",
-                            "oss/javascript/contributing/publish-langchain"
+                            "oss/javascript/contributing/publish-langchain",
+                            "oss/javascript/contributing/comarketing"
                           ]
-                        },
-                        {
-                          "group": "LangGraph",
-                          "pages": [
-                            "oss/javascript/contributing/integrations-langgraph",
-                            "oss/javascript/contributing/implement-langgraph",
-                            "oss/javascript/contributing/standard-tests-langgraph",
-                            "oss/javascript/contributing/publish-langgraph"
-                          ]
-                        },
-                        "oss/javascript/contributing/comarketing"
+                        }
                       ]
                     }
                   ]
@@ -860,23 +834,6 @@
                   ]
                 },
                 {
-                  "group": "Reference",
-                  "pages": [
-                    "langsmith/smith-python-sdk",
-                    "langsmith/smith-js-ts-sdk",
-                    "langsmith/langgraph-python-sdk",
-                    "langsmith/langgraph-js-ts-sdk",
-                    "langsmith/smith-api-ref",
-                    {
-                      "group": "API reference for LangSmith Deployment",
-                      "pages": [
-                        "langsmith/server-api-ref",
-                        "langsmith/api-ref-control-plane"
-                      ]
-                    }
-                  ]
-                },
-                {
                   "group": "Additional resources",
                   "pages": [
                     {
@@ -904,7 +861,8 @@
                     "langsmith/scalability-and-resilience",
                     "langsmith/faq",
                     "langsmith/regions-faq",
-                    "langsmith/pricing-faq"
+                    "langsmith/pricing-faq",
+                    "langsmith/status"
                   ]
                 }
               ]
@@ -935,6 +893,7 @@
                         "langsmith/trace-with-instructor",
                         "langsmith/trace-with-openai-agents-sdk",
                         "langsmith/trace-with-opentelemetry",
+                        "langsmith/trace-with-pydantic-ai",
                         "langsmith/trace-with-semantic-kernel",
                         "langsmith/trace-with-vercel-ai-sdk"
                       ]
@@ -945,7 +904,8 @@
                         "langsmith/annotate-code",
                         "langsmith/trace-with-api",
                         "langsmith/log-llm-trace",
-                        "langsmith/log-retriever-trace"
+                        "langsmith/log-retriever-trace",
+                        "langsmith/ls-metadata-parameters"
                       ]
                     },
                     "langsmith/threads"
@@ -962,6 +922,7 @@
                         "langsmith/sample-traces"
                       ]
                     },
+                    "langsmith/cost-tracking",
                     {
                       "group": "Advanced tracing techniques",
                       "pages": [
@@ -997,8 +958,7 @@
                     "langsmith/compare-traces",
                     "langsmith/share-trace",
                     "langsmith/platform-logs",
-                    "langsmith/data-export",
-                    "langsmith/calculate-token-based-costs"
+                    "langsmith/data-export"
                   ]
                 },
                 {
@@ -1069,6 +1029,7 @@
                     {
                       "group": "Evaluation types",
                       "pages": [
+                        "langsmith/evaluation-types",
                         "langsmith/code-evaluator",
                         "langsmith/llm-as-judge",
                         "langsmith/composite-evaluators",
@@ -1088,6 +1049,7 @@
                     {
                       "group": "Evaluation techniques",
                       "pages": [
+                        "langsmith/experiment-configuration",
                         "langsmith/define-target-function",
                         "langsmith/evaluate-on-intermediate-steps",
                         "langsmith/multiple-scores",
@@ -1222,6 +1184,7 @@
                       "langsmith/use-remote-graph",
                       "langsmith/semantic-search",
                       "langsmith/configure-ttl",
+                      "langsmith/agent-server-scale",
                       "langsmith/cicd-pipeline-example"
                     ]
                 },
@@ -1253,8 +1216,7 @@
                             "langsmith/background-run",
                             "langsmith/same-thread",
                             "langsmith/cron-jobs",
-                            "langsmith/stateless-runs",
-                            "langsmith/configurable-headers"
+                            "langsmith/stateless-runs"
                           ]
                         }
                       ]
@@ -1317,15 +1279,9 @@
                   "pages": [
                       "langsmith/custom-lifespan",
                       "langsmith/custom-middleware",
-                      "langsmith/custom-routes"
-                  ]
-                },
-                {
-                  "group": "Reference",
-                  "pages": [
-                    "langsmith/remote-graph",
-                    "langsmith/cli",
-                    "langsmith/env-var"
+                      "langsmith/custom-routes",
+                      "langsmith/configurable-headers",
+                      "langsmith/configurable-logs"
                   ]
                 }
               ]
@@ -1334,9 +1290,30 @@
               "tab": "Agent Builder",
               "pages": [
                 "langsmith/agent-builder",
-                "langsmith/agent-builder-setup",
-                "langsmith/agent-builder-tools",
-                "langsmith/agent-builder-slack-app"
+                {
+                  "group": "Get started",
+                  "pages": [
+                    "langsmith/agent-builder-essentials",
+                    "langsmith/agent-builder-templates",
+                    "langsmith/agent-builder-setup",
+                    "langsmith/agent-builder-workspace-vs-private"
+                  ]
+                },
+                {
+                  "group": "Tools and integrations",
+                  "pages": [
+                    "langsmith/agent-builder-tools",
+                    "langsmith/agent-builder-mcp-framework",
+                    "langsmith/agent-builder-slack-app"
+                  ]
+                },
+                {
+                  "group": "Advanced",
+                  "pages": [
+                    "langsmith/agent-builder-auth-format",
+                    "langsmith/agent-builder-code"
+                  ]
+                }
               ]
             },
             {
@@ -1347,6 +1324,13 @@
                   "pages": [
                     "langsmith/platform-setup",
                     "langsmith/cloud"
+                  ]
+                },
+                {
+                  "group": "Self-hosted cloud architecture",
+                  "pages": [
+                    "langsmith/aws-self-hosted",
+                    "langsmith/azure-self-hosted"
                   ]
                 },
                 {
@@ -1435,13 +1419,43 @@
                         "langsmith/script-running-ch-support-queries"
                       ]
                     }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
+                  ]
+                }
+              ]
+            },
+            {
+              "tab": "Reference",
+              "pages": [
+                "langsmith/reference",
+                "langsmith/smith-python-sdk",
+                "langsmith/smith-js-ts-sdk",
+                "langsmith/langgraph-python-sdk",
+                "langsmith/langgraph-js-ts-sdk",
+                "langsmith/smith-api-ref",
+                {
+                  "group": "LangSmith Deployment",
+                  "pages": [
+                    {
+                    "group": "Agent Server API",
+                    "pages": [
+                      "langsmith/server-api-ref"
+                    ],
+                    "openapi": {
+                      "source": "langsmith/agent-server-openapi.json",
+                      "directory": "langsmith/agent-server-api"
+                    }
+                  },
+                    "langsmith/api-ref-control-plane",
+                    "langsmith/cli",
+                    "langsmith/remote-graph",
+                    "langsmith/env-var"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
   },
   "interaction": {
     "drilldown": true
@@ -1825,6 +1839,10 @@
     {
       "source": "/oss/integrations/text_embedding/google_generativeai",
       "destination": "/oss/integrations/text_embedding/google_generative_ai"
+    },
+    {
+      "source": "/langsmith/agent-server-api-ref",
+      "destination": "/langsmith/server-api-ref"
     }
   ]
 }
