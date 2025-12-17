@@ -93,7 +93,7 @@ For more information, see the [start-local GitHub repository](https://github.com
 
 #### Option 2: Docker (manual setup)
 
-Run a single-node Elasticsearch instance with security disabled. This is not recommended for production use.
+You can use the [official Docker image](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html) to get started. Run a single-node Elasticsearch instance with security disabled. This is not recommended for production use.
 
 ```bash
 docker run -p 9200:9200 -e "discovery.type=single-node" -e "xpack.security.enabled=false" -e "xpack.security.http.ssl.enabled=false" docker.elastic.co/elasticsearch/elasticsearch:8.17.0
