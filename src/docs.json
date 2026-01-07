@@ -110,9 +110,8 @@
   "navbar": {
     "links": [
       {
-        "label": "Ask AI",
-        "href": "https://chat.langchain.com/",
-        "icon": "message"
+        "label": "Support",
+        "href": "https://support.langchain.com/"
       },
       {
         "label": "GitHub",
@@ -881,7 +880,7 @@
                   "group": "Account administration",
                   "pages": [
                     "langsmith/administration-overview",
-                    "langsmith/set-up-a-workspace",
+                    "langsmith/set-up-hierarchy",
                     "langsmith/manage-organization-by-api",
                     "langsmith/billing",
                     "langsmith/set-up-resource-tags",
@@ -1245,7 +1244,8 @@
                   "pages": [
                     "langsmith/deploy-to-cloud",
                     "langsmith/deploy-with-control-plane",
-                    "langsmith/deploy-standalone-server"
+                    "langsmith/deploy-standalone-server",
+                    "langsmith/diagnostics-self-hosted"
                   ]
                 },
                 {
@@ -1364,7 +1364,8 @@
                   "pages": [
                     "langsmith/agent-builder-auth-format",
                     "langsmith/agent-builder-code",
-                    "langsmith/agent-builder-mcp-framework"
+                    "langsmith/agent-builder-mcp-framework",
+                    "langsmith/agent-builder-update-mcp-servers"
                   ]
                 }
               ]
@@ -1383,7 +1384,8 @@
                   "group": "Self-hosted cloud architecture",
                   "pages": [
                     "langsmith/aws-self-hosted",
-                    "langsmith/azure-self-hosted"
+                    "langsmith/azure-self-hosted",
+                    "langsmith/gcp-self-hosted"
                   ]
                 },
                 {
